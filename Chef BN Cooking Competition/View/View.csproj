@@ -60,5 +60,11 @@
   <ItemGroup>
     <Content Include="Chef BN Icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameManager\Model.csproj">
+      <Project>{ED8AFE44-0968-40AB-A661-D203D475CDE6}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
