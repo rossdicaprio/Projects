@@ -6,7 +6,7 @@ namespace Model
     /// <summary>
     /// Represents the shared deck in the current game
     /// </summary>
-    class Deck
+    public class Deck
     {
         // The internal structure holding the cards
         private List<Card> cards;
