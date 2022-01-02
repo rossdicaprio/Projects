@@ -187,8 +187,11 @@ namespace View
 
             startButton.Click += (o, s) =>
             {
+                startButton.Visible = false;
+                optionsButton.Visible = false;
+                optionsGroup.Visible = false;
+                exitButton.Visible = false;
                 GameManager manager = new GameManager();
-                startButton.Enabled = false;
             };
 
             optionsButton.Click += (o, s) =>
@@ -206,8 +209,6 @@ namespace View
             form.Controls.Add(optionsButton);
             form.Controls.Add(exitButton);
             form.ShowDialog();
-
-            //while (form.Created){}
         }
 
         /// <summary>
